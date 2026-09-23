@@ -57,23 +57,3 @@ El sitio cuenta con enlaces relativos compatibles tanto de forma local como en *
 | **Rastreo e Indexación** | Archivos `robots.txt`, `sitemap.xml` y etiquetas canónicas en cada documento. | Indexación total y prevención de contenido duplicado. |
 
 ---
-
-## 🌐 Cómo Publicar en GitHub Pages
-
-1. Abre tu terminal en la carpeta del proyecto:
-   ```bash
-   git init
-   git add .
-   git commit -m "feat: sitio web multi-pagina Top Gear clasico optimizado para SEO"
-   ```
-2. Crea un repositorio en GitHub y sube los cambios:
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/TU-USUARIO/NOMBRE-DEL-REPO.git
-   git push -u origin main
-   ```
-3. Activa GitHub Pages:
-   - En tu repositorio de GitHub, dirígete a **Settings** > **Pages**.
-   - En la sección **Build and deployment** > **Source**, selecciona `Deploy from a branch`.
-   - Elige la rama `main` y la carpeta `/ (root)`, luego pulsa **Save**.
-   - En 1-2 minutos tu sitio estará en línea en: `https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/`.
