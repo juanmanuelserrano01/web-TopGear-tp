@@ -1,0 +1,14 @@
+# ==============================================================================
+# ROBOTS.TXT - Top Gear Clásico
+# Instrucciones de rastreo e indexación para motores de búsqueda (Googlebot, Bingbot)
+# ==============================================================================
+
+User-agent: *
+Allow: /
+
+# Deshabilitar rastreo de archivos fuente o carpetas innecesarias si existieran
+Disallow: /tmp/
+Disallow: /.git/
+
+# Ubicación del Mapa del Sitio XML (Crucial para descubrimiento de URLs)
+Sitemap: https://ejemplo-topgear-clasico.github.io/sitemap.xml

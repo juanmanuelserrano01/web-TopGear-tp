@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ==========================================================================
+     SITEMAP XML - Top Gear Clásico
+     Estructura estándar según el protocolo sitemaps.org
+     ========================================================================== -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- 1. Página Principal / Home -->
+  <url>
+    <loc>https://ejemplo-topgear-clasico.github.io/index.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Jeremy-Clarkson.jpg.webp</image:loc>
+      <image:title>Jeremy Clarkson - Top Gear</image:title>
+      <image:caption>Jeremy Clarkson en la era clásica de Top Gear</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Richard-Hammond.webp</image:loc>
+      <image:title>Richard Hammond - The Hamster</image:title>
+      <image:caption>Richard Hammond en Top Gear</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/James-May.avif</image:loc>
+      <image:title>James May - Captain Slow</image:title>
+      <image:caption>James May en Top Gear</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Especial-Vietnam.jpg</image:loc>
+      <image:title>Especial de Vietnam</image:title>
+      <image:caption>Especial de Vietnam de Top Gear en scooters</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Especial-Polo.jpeg.webp</image:loc>
+      <image:title>Especial del Polo Norte</image:title>
+      <image:caption>Toyota Hilux en el Polo Norte Magnético</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Especial-Botswana.jpg</image:loc>
+      <image:title>Especial de Botsuana</image:title>
+      <image:caption>Opel Kadett Oliver en el desierto de Botsuana</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/pagani-zonda-huayra.jpg.webp</image:loc>
+      <image:title>Pagani Zonda y Huayra</image:title>
+      <image:caption>Power Lap en Dunsfold con The Stig</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Bugatti-Caza.jpeg.webp</image:loc>
+      <image:title>Bugatti Veyron vs Caza</image:title>
+      <image:caption>Bugatti Veyron compitiendo contra un Eurofighter Typhoon</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/amphibious-car-challenge.webp</image:loc>
+      <image:title>Autos Anfibios</image:title>
+      <image:caption>Toybota cruzando el Canal de la Mancha</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Casa-Rodante.jpg</image:loc>
+      <image:title>El Rascacielos Rodante</image:title>
+      <image:caption>Casa rodante de tres pisos de Jeremy Clarkson</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 2. Página: Presentadores -->
+  <url>
+    <loc>https://ejemplo-topgear-clasico.github.io/presentadores.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Jeremy-Clarkson.jpg.webp</image:loc>
+      <image:title>Jeremy Clarkson</image:title>
+      <image:caption>Jeremy Clarkson y los autos de alta potencia</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Richard-Hammond.webp</image:loc>
+      <image:title>Richard Hammond</image:title>
+      <image:caption>Richard Hammond The Hamster</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/James-May.avif</image:loc>
+      <image:title>James May</image:title>
+      <image:caption>James May Captain Slow</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/STIG.jpg.webp</image:loc>
+      <image:title>The Stig</image:title>
+      <image:caption>The Stig piloto de pruebas en Dunsfold</image:caption>
+    </image:image>
+  </url>
+
+  <!-- 3. Página: Galería de Autos -->
+  <url>
+    <loc>https://ejemplo-topgear-clasico.github.io/galeria.html</loc>
+    <lastmod>2026-09-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Lexus-LFA.jpg</image:loc>
+      <image:title>Lexus LFA</image:title>
+      <image:caption>Lexus LFA V10 probado en Top Gear</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Ferrari-458-italia.jpg.webp</image:loc>
+      <image:title>Ferrari 458 Italia</image:title>
+      <image:caption>Ferrari 458 Italia en ruta de montaña</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Mclaren-MP4-12C.jpg.webp</image:loc>
+      <image:title>McLaren MP4-12C</image:title>
+      <image:caption>McLaren MP4-12C en Dunsfold con The Stig</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Especial-Polo.jpeg.webp</image:loc>
+      <image:title>Toyota Hilux - Especial del Polo Norte</image:title>
+      <image:caption>Toyota Hilux en la nieve del Polo Norte</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Especial-Botswana.jpg</image:loc>
+      <image:title>Opel Kadett Oliver</image:title>
+      <image:caption>Oliver en el salar de Makgadikgadi</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Especial-Vietnam.jpg</image:loc>
+      <image:title>Especial de Vietnam</image:title>
+      <image:caption>Recorrido por Vietnam en scooters</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/pagani-zonda-huayra.jpg.webp</image:loc>
+      <image:title>Pagani Zonda y Huayra</image:title>
+      <image:caption>Pagani Huayra en pista</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Bugatti-Caza.jpeg.webp</image:loc>
+      <image:title>Bugatti Veyron vs Caza Typhoon</image:title>
+      <image:caption>Bugatti Veyron en duelo de aceleración</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/amphibious-car-challenge.webp</image:loc>
+      <image:title>Toybota Anfibia</image:title>
+      <image:caption>Cruce del Canal de la Mancha</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Superauto.10000.jpg</image:loc>
+      <image:title>Superautos de £10.000</image:title>
+      <image:caption>Desafío de superdeportivos italianos usados</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Casa-Rodante.jpg</image:loc>
+      <image:title>El Rascacielos Rodante</image:title>
+      <image:caption>Casa rodante personalizada de Jeremy Clarkson</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://ejemplo-topgear-clasico.github.io/images/Estrellas-Auto-Precio-Razonable.jpg</image:loc>
+      <image:title>Auto a Precio Razonable</image:title>
+      <image:caption>Celebridades y pilotos de F1 en pista</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

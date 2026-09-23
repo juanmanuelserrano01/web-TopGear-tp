@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+
+<head>
+  <!-- =======================================================
+       METADATOS BÁSICOS Y CONFIGURACIÓN DEL DOCUMENTO
+       ======================================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- =======================================================
+       SEO ON-PAGE: TÍTULO Y DESCRIPCIÓN OPTIMIZADOS
+       - Título: contiene palabras clave principales (Top Gear, Clarkson, Hammond, May)
+       - Meta description: 155-160 caracteres con llamada a la acción y keywords
+       - Canonical: evita contenido duplicado en buscadores
+       ======================================================= -->
+  <title>Top Gear Clásico | La Época Dorada con Clarkson, Hammond y May</title>
+  <meta name="description"
+    content="Revive la era legendaria de Top Gear con Jeremy Clarkson, Richard Hammond y James May. Explora los mejores especiales por el mundo, pruebas de pista y desafíos.">
+  <meta name="keywords"
+    content="Top Gear, Jeremy Clarkson, Richard Hammond, James May, The Stig, autos clásicos, especiales Top Gear, desafíos de autos baratos, automovilismo BBC">
+  <meta name="author" content="Top Gear Fan Community">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+  <!-- URL Canónica para consolidar la autoridad de la página -->
+  <link rel="canonical" href="https://ejemplo-topgear-clasico.github.io/">
+
+  <!-- =======================================================
+       OPEN GRAPH (Facebook, WhatsApp, LinkedIn) Y TWITTER CARDS
+       Optimiza cómo se visualiza el enlace al ser compartido en redes
+       ======================================================= -->
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Top Gear Clásico: La Época Dorada con Clarkson, Hammond y May">
+  <meta property="og:description"
+    content="Descubre los especiales más épicos, las pruebas al límite con The Stig y las locuras automovilísticas del trío británico más famoso.">
+  <meta property="og:url" content="https://ejemplo-topgear-clasico.github.io/">
+  <meta property="og:site_name" content="Top Gear Clásico">
+  <meta property="og:image" content="https://ejemplo-topgear-clasico.github.io/images/Logo-TopGear.png">
+  <meta property="og:image:alt" content="Logo oficial de Top Gear">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Top Gear Clásico | Clarkson, Hammond y May">
+  <meta name="twitter:description"
+    content="El sitio definitivo para revivir los desafíos de autos baratos, especiales mundiales y récords de pista de Top Gear.">
+  <meta name="twitter:image" content="https://ejemplo-topgear-clasico.github.io/images/Logo-TopGear.png">
+
+  <!-- =======================================================
+       OPTIMIZACIÓN DE RENDIMIENTO (Core Web Vitals)
+       - Preconnect para fuentes externas (reduce latencia DNS/TLS)
+       ======================================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Oswald:wght@500;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Hoja de estilos principal -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- =======================================================
+       DATOS ESTRUCTURADOS (SCHEMA.ORG JSON-LD)
+       Facilita a Google entender la entidad, temáticas y navegación
+       ======================================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ejemplo-topgear-clasico.github.io/#website",
+        "url": "https://ejemplo-topgear-clasico.github.io/",
+        "name": "Top Gear Clásico",
+        "description": "Tributo y archivo definitivo de la era clásica de Top Gear (2002-2015)",
+        "inLanguage": "es"
+      },
+      {
+        "@type": "TVSeries",
+        "name": "Top Gear",
+        "actor": [
+          { "@type": "Person", "name": "Jeremy Clarkson" },
+          { "@type": "Person", "name": "Richard Hammond" },
+          { "@type": "Person", "name": "James May" }
+        ],
+        "genre": ["Automovilismo", "Entretenimiento", "Aventura", "Comedia"],
+        "description": "El show de automovilismo más icónico de la historia de la televisión británica conducido por Clarkson, Hammond y May."
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Enlace accesible de salto al contenido principal (A11y y SEO) -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- =======================================================
+       ENCABEZADO Y NAVEGACIÓN PRINCIPAL
+       - Uso de etiquetas semánticas <header> y <nav>
+       - Atributos ARIA para accesibilidad
+       - Menú responsive con dropdown en segundo nivel
+       ======================================================= -->
+  <header class="site-header" id="header-principal">
+    <div class="header-container">
+
+      <!-- Logotipo con imagen oficial descargada -->
+      <a href="#inicio" class="logo" aria-label="Top Gear Clásico - Inicio">
+        <img src="images/Logo-TopGear.png" alt="Top Gear Logo" class="logo-img" width="140" height="44">
+        <span class="logo-tag">ERA CLÁSICA</span>
+      </a>
+
+      <!-- Botón hamburguesa accesible para dispositivos móviles -->
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="menu-principal"
+        aria-label="Abrir menú de navegación">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <!-- Barra de navegación con 4 links principales + Dropdown -->
+      <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#inicio" class="nav-link active">Inicio</a>
+          </li>
+
+          <!-- LINK 1: Episodios / Especiales (con Submenú Dropdown) -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" id="dropdown-episodios" aria-expanded="false" aria-haspopup="true">
+              Episodios y Especiales
+              <svg class="dropdown-icon" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-episodios">
+              <li class="dropdown-item">
+                <a href="#especiales-mundo" class="dropdown-link">
+                  <span class="dropdown-title">Especiales por el Mundo</span>
+                  <span class="dropdown-desc">Vietnam, Polo Norte, Botsuana, Bolivia</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#pruebas-pista" class="dropdown-link">
+                  <span class="dropdown-title">Pruebas de Pista &amp; The Stig</span>
+                  <span class="dropdown-desc">Power Laps, Superautos en Dunsfold</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="#desafios-baratos" class="dropdown-link">
+                  <span class="dropdown-title">Desafíos de Autos Baratos</span>
+                  <span class="dropdown-desc">Retos por £1500, caravanas e hibridos</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- LINK 2: Presentadores (Nueva Página) -->
+          <li class="nav-item">
+            <a href="presentadores.html" class="nav-link">Presentadores</a>
+          </li>
+
+          <!-- LINK 3: Galería (Nueva Página) -->
+          <li class="nav-item">
+            <a href="galeria.html" class="nav-link">Galería</a>
+          </li>
+
+          <!-- LINK 4: Contacto -->
+          <li class="nav-item">
+            <a href="#contacto" class="nav-link nav-btn-highlight">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =======================================================
+       CONTENIDO PRINCIPAL (<main>)
+       Estructurado con jerarquía de encabezados H1 -> H2 -> H3
+       ======================================================= -->
+  <main id="contenido-principal">
+
+    <!-- =====================================================
+         HERO SECTION / PORTADA
+         - H1 único optimizado con palabras clave
+         - Call-to-action (CTA) claro
+         - Estadísticas de autoridad
+         ===================================================== -->
+    <section class="hero-section" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <div class="hero-badge">2002 — 2015 • La Trilogía Inolvidable</div>
+
+        <!-- H1 Principal: Vital para SEO on-page -->
+        <h1 class="hero-title" id="hero-title">
+          Top Gear: La Época Dorada del Automovilismo con <span class="text-gradient">Clarkson, Hammond y May</span>
+        </h1>
+
+        <p class="hero-lead">
+          Velocidad pura, explosiones, debates absurdos y expediciones en los terrenos más inhóspitos del
+          planeta. Bienvenido a la página homenaje del show automovilistico más visto en el mundo.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#especiales-mundo" class="btn btn-primary">
+            Explorar Especiales
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+          </a>
+          <a href="presentadores.html" class="btn btn-secondary">Conocer al Trío y The Stig</a>
+        </div>
+
+        <!-- Estadísticas destacadas con microdatos visuales -->
+        <div class="hero-stats" role="region" aria-label="Estadísticas de la época dorada">
+          <div class="stat-card">
+            <span class="stat-number">22</span>
+            <span class="stat-label">Temporadas Juntos</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">350M+</span>
+            <span class="stat-label">Espectadores Globales</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">13+</span>
+            <span class="stat-label">Especiales</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">1</span>
+            <span class="stat-label">The Stig</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN 1: PRESENTADORES (Biografías)
+         - Uso de etiquetas <article> semánticas
+         - Imágenes con atributos width, height y alt descriptivos
+         ===================================================== -->
+    <section class="section presenters-section" id="presentadores" aria-labelledby="presenters-title">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">Los Artífices del Caos</span>
+          <h2 class="section-title" id="presenters-title">Los Tres Presentadores Legendarios</h2>
+          <p class="section-desc">
+            Una química irrepetible de arrogancia apasionada, entusiasmo infantil y meticulosa lentitud británica.
+          </p>
+        </header>
+
+        <div class="presenters-grid">
+
+          <!-- Jeremy Clarkson -->
+          <article class="presenter-card" itemscope itemtype="https://schema.org/Person">
+            <div class="presenter-media">
+              <img src="images/Jeremy-Clarkson.jpg.webp"
+                alt="Jeremy Clarkson apasionado por la potencia de los motores V8 y superdeportivos"
+                class="presenter-img" loading="lazy" width="700" height="700">
+              <div class="presenter-badge">"Power &amp; Speed!"</div>
+            </div>
+            <div class="presenter-body">
+              <h3 class="presenter-name" itemprop="name">Jeremy Clarkson</h3>
+              <span class="presenter-role" itemprop="jobTitle">El Provocador Principal</span>
+              <p class="presenter-bio" itemprop="description">
+                Famoso por su búsqueda obsesiva de potencia pura (<em>"POWERRR!"</em>), su odio declarado hacia las
+                caravanas y su estilo sarcástico que transformó un programa técnico de autos en un fenómeno mundial del
+                entretenimiento.
+              </p>
+              <div class="presenter-meta">
+                <span class="meta-tag">Auto Favorito: Lexus LFA</span>
+                <span class="meta-tag">Frase: "And on that bombshell..."</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Richard Hammond -->
+          <article class="presenter-card" itemscope itemtype="https://schema.org/Person">
+            <div class="presenter-media">
+              <img src="images/Richard-Hammond.webp"
+                alt="Richard Hammond 'The Hamster' amante de los muscle cars americanos y Porsche 911"
+                class="presenter-img" loading="lazy" width="700" height="700">
+              <div class="presenter-badge">"The Hamster"</div>
+            </div>
+            <div class="presenter-body">
+              <h3 class="presenter-name" itemprop="name">Richard Hammond</h3>
+              <span class="presenter-role" itemprop="jobTitle">El Adicto a la Adrenalina</span>
+              <p class="presenter-bio" itemprop="description">
+                Apodado cariñosamente "The Hamster" por su estatura y energía inagotable. Amante de los Muscle
+                Cars y los Porsche 911, sobrevivió sorprendentemente a un accidente automovilístico a más de 300 km/h en
+                pos de
+                la velocidad.
+              </p>
+              <div class="presenter-meta">
+                <span class="meta-tag">Auto Favorito: Porsche 911 GT3</span>
+                <span class="meta-tag">Mascota: Oliver (Opel Kadett)</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- James May -->
+          <article class="presenter-card" itemscope itemtype="https://schema.org/Person">
+            <div class="presenter-media">
+              <img src="images/James-May.avif"
+                alt="James May 'Captain Slow' analizando con calma la ingeniería de autos de lujo y clásicos"
+                class="presenter-img" loading="lazy" width="700" height="700">
+              <div class="presenter-badge">"Captain Slow"</div>
+            </div>
+            <div class="presenter-body">
+              <h3 class="presenter-name" itemprop="name">James May</h3>
+              <span class="presenter-role" itemprop="jobTitle">El Purista y Científico</span>
+              <p class="presenter-bio" itemprop="description">
+                Bautizado como "Captain Slow" por su prudencia al volante y su fascinación por la ingeniería minuciosa.
+                Pese a su apodo, fue el único del trío en romper los 407 km/h y luego 417 km/h al mando de un Bugatti
+                Veyron Super Sport.
+              </p>
+              <div class="presenter-meta">
+                <span class="meta-tag">Auto Favorito: Ferrari 458</span>
+                <span class="meta-tag">Frase: "Hello..." / "Buffeting"</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+
+        <!-- Mención honorífica a The Stig -->
+        <aside class="stig-banner" aria-label="Mención honorífica a The Stig">
+          <div class="stig-icon" aria-hidden="true">🏁</div>
+          <div class="stig-content">
+            <h3 class="stig-title">Y su piloto de pruebas domesticado: <em>The Stig</em></h3>
+            <p class="stig-desc">
+              "Algunos dicen que sus párpados se abren verticalmente y que solo come combustible de 98 octanos. Todo lo
+              que sabemos es que se llama <strong>The Stig</strong>."
+            </p>
+          </div>
+        </aside>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN 2: EPISODIOS Y ESPECIALES (3 Subcategorías)
+         Cumple con los 3 submenús:
+         1. Especiales en el mundo
+         2. Pruebas de pista
+         3. Desafíos de autos baratos
+         ===================================================== -->
+    <section class="section episodes-section" id="especiales" aria-labelledby="episodes-title">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">Rutas, Circuitos y Locura</span>
+          <h2 class="section-title" id="episodes-title">Especiales, Pruebas y Desafíos</h2>
+          <p class="section-desc">
+            Los formatos que definieron a Top Gear y marcaron la historia de la televisión británica e internacional.
+          </p>
+        </header>
+
+        <!-- SUBGRUPO 1: Especiales por el Mundo -->
+        <div class="category-block" id="especiales-mundo">
+          <div class="category-header">
+            <span class="category-tag">Aventura Global</span>
+            <h3 class="category-title">1. Especiales por el Mundo</h3>
+            <p class="category-subtitle">Expediciones al límite de la resistencia humana y mecánica a través de
+              continentes enteros.</p>
+          </div>
+
+          <div class="cards-grid">
+
+            <article class="feature-card">
+              <div class="card-img-wrap">
+                <img src="images/Especial-Vietnam.jpg"
+                  alt="Paisaje montañoso y selva tropical recordando el especial de Vietnam en Top Gear" loading="lazy"
+                  width="600" height="380">
+                <span class="card-badge">Temporada 12 • Ep. 8</span>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Especial de Vietnam (Motos)</h4>
+                <p class="card-text">
+                  Obligados a cruzar 1.600 km de Vietnam de sur a norte en scooters compradas por poco dinero. Clarkson
+                  en su icónica Vespa verde sufrió más que nunca antes.
+                </p>
+                <ul class="card-specs">
+                  <li><strong>Destino:</strong> Saigón a Bahía de Ha Long</li>
+                  <li><strong>Hito:</strong> Considerado el mejor episodio de la historia</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="card-img-wrap">
+                <img src="images/Especial-Polo.jpeg.webp"
+                  alt="Terreno congelado y nieve ártica del especial del Polo Norte de Top Gear" loading="lazy"
+                  width="600" height="380">
+                <span class="card-badge">Especial 2007</span>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Especial del Polo Norte</h4>
+                <p class="card-text">
+                  La carrera definitiva: Jeremy y James al mando de una Toyota Hilux modificada contra Richard en un
+                  trineo tirado por perros esquimales hacia el Polo Norte Magnético.
+                </p>
+                <ul class="card-specs">
+                  <li><strong>Hito:</strong> Primeros humanos en llegar al Polo Norte en automóvil</li>
+                  <li><strong>Temperatura:</strong> -40°C</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="card-img-wrap">
+                <img src="images/Especial-Botswana.jpg"
+                  alt="Desierto africano y sabana del especial de Botsuana con el Opel Kadett Oliver" loading="lazy"
+                  width="600" height="380">
+                <span class="card-badge">Temporada 10 • Ep. 4</span>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Especial de Botswana (África)</h4>
+                <p class="card-text">
+                  Cruzando el desierto de sal de Makgadikgadi con autos con tracción simple de menos de £1500. El
+                  nacimiento del amor incondicional de Hammond por su Opel Kadett "Oliver".
+                </p>
+                <ul class="card-specs">
+                  <li><strong>Autos:</strong> Lancia Beta, Mercedes 230E, Opel Kadett</li>
+                  <li><strong>Distancia:</strong> 1.600 km de desierto puro</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- SUBGRUPO 2: Pruebas de Pista & The Stig -->
+        <div class="category-block" id="pruebas-pista">
+          <div class="category-header">
+            <span class="category-tag">Dunsfold Aerodrome</span>
+            <h3 class="category-title">2. Pruebas de Pista &amp; The Stig</h3>
+            <p class="category-subtitle">El circuito de pruebas donde los mejores hiperdeportivos del planeta buscaron
+              la gloria en la Power Lap Board.</p>
+          </div>
+
+          <div class="cards-grid">
+
+            <article class="feature-card">
+              <div class="card-img-wrap">
+                <img src="images/pagani-zonda-huayra.jpg.webp"
+                  alt="Pagani Zonda y Huayra rodando en la pista de pruebas de Top Gear" loading="lazy" width="600"
+                  height="380">
+                <span class="card-badge">Power Lap Legend</span>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Pagani Zonda &amp; Huayra</h4>
+                <p class="card-text">
+                  Horacio Pagani y su obra de arte de fibra de carbono reinaron durante temporadas en las curvas de
+                  Hammerhead, Follow-Through y Gambon en manos de The Stig.
+                </p>
+                <ul class="card-specs">
+                  <li><strong>Tiempo Huayra:</strong> 1:13.8 en seco</li>
+                  <li><strong>Motor:</strong> AMG V12 Twin Turbo</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="card-img-wrap">
+                <img src="images/Bugatti-Caza.jpeg.webp"
+                  alt="Bugatti Veyron compitiendo contra un avión caza Eurofighter Typhoon" loading="lazy" width="600"
+                  height="380">
+                <span class="card-badge">Récord Mundial</span>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Bugatti Veyron vs. Caza Eurofighter</h4>
+                <p class="card-text">
+                  Una de las pruebas más icónicas: el Veyron de 1001 CV conducido por Hammond en una carrera
+                  vertical-horizontal de 3.2 kilómetros contra un avión caza militar Typhoon.
+                </p>
+                <ul class="card-specs">
+                  <li><strong>Velocidad Veyron:</strong> 407.5 km/h</li>
+                  <li><strong>Vencedor:</strong> Eurofighter Typhoon por escasos segundos</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="card-img-wrap">
+                <img src="images/Estrellas-Auto-Precio-Razonable.jpg"
+                  alt="Auto a precio razonable en la pista de pruebas de Top Gear con celebridades" loading="lazy"
+                  width="600" height="380">
+                <span class="card-badge">Star in a Reasonably Priced Car</span>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Estrella en Auto a Precio Razonable</h4>
+                <p class="card-text">
+                  Celebridades de Hollywood y pilotos de F1 (Tom Cruise, Rowan Atkinson, Lewis Hamilton, Sebastian
+                  Vettel) compitiendo contra el cronómetro en autos económicos familiares.
+                </p>
+                <ul class="card-specs">
+                  <li><strong>Modelos:</strong> Suzuki Liana, Chevy Lacetti, Kia Cee'd</li>
+                  <li><strong>Récord F1:</strong> Daniel Ricciardo (1:42.2)</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- SUBGRUPO 3: Desafíos de Autos Baratos -->
+        <div class="category-block" id="desafios-baratos">
+          <div class="category-header">
+            <span class="category-tag">Ingenio &amp; Destrucción</span>
+            <h3 class="category-title">3. Desafíos de Autos Baratos (£1.500)</h3>
+            <p class="category-subtitle">El verdadero corazón del show: presupuestos irrisorios, modificados caseros
+              catastróficos y rivalidad pura.</p>
+          </div>
+
+          <div class="cards-grid">
+
+            <article class="feature-card">
+              <div class="card-img-wrap">
+                <img src="images/amphibious-car-challenge.webp"
+                  alt="Autos anfibios caseros de Top Gear cruzando el Canal de la Mancha" loading="lazy" width="600"
+                  height="380">
+                <span class="card-badge">Desafío Épico</span>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Autos Anfibios cruzando el Canal</h4>
+                <p class="card-text">
+                  Construir vehículos capaces de rodar en calle y navegar. Tras un primer desastre, lograron cruzar
+                  navegando los 34 kilómetros del Canal de la Mancha hasta Francia en una Toyota Hilux con motor fuera
+                  de borda.
+                </p>
+                <ul class="card-specs">
+                  <li><strong>Creaciones:</strong> "Toybota", "Dampervan", "Triumph Herald Sail"</li>
+                  <li><strong>Resultado:</strong> Récord mundial de travesía anfibia</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="card-img-wrap">
+                <img src="images/Superauto.10000.jpg"
+                  alt="Superautos italianos antiguos por diez mil libras averiados en ruta" loading="lazy" width="600"
+                  height="380">
+                <span class="card-badge">Temporada 7 • Ep. 4</span>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Superautos Italianos por £10.000</h4>
+                <p class="card-text">
+                  Comprar superautos exóticos de motor central por el precio de un hatchback usado. Ferrari 308,
+                  Maserati Merak y Lamborghini Urraco luchando contra recalentamientos y fallas eléctricas continuas.
+                </p>
+                <ul class="card-specs">
+                  <li><strong>Presupuesto:</strong> £10.000</li>
+                  <li><strong>Resultado:</strong> Cero autos llegaron enteros al destino</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="feature-card">
+              <div class="card-img-wrap">
+                <img src="images/Casa-Rodante.jpg"
+                  alt="Casa rodante casera de tres pisos construida por Jeremy Clarkson" loading="lazy" width="600"
+                  height="380">
+                <span class="card-badge">Temporada 15 • Ep. 4</span>
+              </div>
+              <div class="card-body">
+                <h4 class="card-title">Casas Rodantes de Construcción Propia</h4>
+                <p class="card-text">
+                  Construir autocaravanas personalizadas sobre chasis estándar. Jeremy construyó un rascacielos de 3
+                  pisos con temática de torre de castillo que se balanceaba peligrosamente por las autopistas inglesas.
+                </p>
+                <ul class="card-specs">
+                  <li><strong>Diseños:</strong> "El Rascacielos", "La Cabaña", "El Castillo"</li>
+                  <li><strong>Fin:</strong> El rascacielos cayó por un acantilado</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         SECCIÓN 3: GALERÍA DE IMÁGENES (Con Lightbox)
+         - Galería adaptable en CSS Grid
+         - Atributos alt enriquecidos
+         - Interacción mediante modal/dialog nativo
+         ===================================================== -->
+    <section class="section gallery-section" id="galeria" aria-labelledby="gallery-title">
+      <div class="container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">Momentos Inmortales</span>
+          <h2 class="section-title" id="gallery-title">Galería de Imágenes</h2>
+          <p class="section-desc">
+            Haz clic en cualquier imagen para verla en pantalla completa con detalles técnicos del momento.
+          </p>
+        </header>
+
+        <!-- Filtros interactivos accesibles -->
+        <div class="gallery-filters" role="tablist" aria-label="Filtros de la galería">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos</button>
+          <button class="filter-btn" data-filter="supercars" role="tab" aria-selected="false">Superautos</button>
+          <button class="filter-btn" data-filter="specials" role="tab" aria-selected="false">Especiales</button>
+          <button class="filter-btn" data-filter="trio" role="tab" aria-selected="false">El Trío</button>
+        </div>
+
+        <!-- Grid de la galería -->
+        <div class="gallery-grid" id="gallery-grid">
+
+          <!-- Item 1 -->
+          <figure class="gallery-item" data-category="supercars">
+            <button class="gallery-trigger" aria-haspopup="dialog" data-img-src="images/pagani-zonda-huayra.jpg.webp"
+              data-img-alt="Pagani Zonda y Huayra rodando en la pista de Top Gear en Dunsfold"
+              data-caption="Pagani Zonda &amp; Huayra: La obra maestra de fibra de carbono reinando en la pista de pruebas de Dunsfold.">
+              <img src="images/pagani-zonda-huayra.jpg.webp" alt="Pagani Zonda y Huayra en Dunsfold" loading="lazy"
+                width="600" height="450">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Pagani Zonda &amp; Huayra • Dunsfold</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- Item 2 -->
+          <figure class="gallery-item" data-category="specials">
+            <button class="gallery-trigger" aria-haspopup="dialog" data-img-src="images/Especial-Polo.jpeg.webp"
+              data-img-alt="Expedición al Polo Norte en camioneta modificada con Jeremy Clarkson y James May"
+              data-caption="Especial del Polo Norte: La legendaria travesía en la Toyota Hilux hacia el Polo Norte Magnético a -40°C.">
+              <img src="images/Especial-Polo.jpeg.webp" alt="Toyota Hilux en el Polo Norte" loading="lazy" width="600"
+                height="450">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Especial del Polo Norte</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- Item 3 -->
+          <figure class="gallery-item" data-category="custom">
+            <button class="gallery-trigger" aria-haspopup="dialog" data-img-src="images/amphibious-car-challenge.webp"
+              data-img-alt="Autos anfibios caseros de Top Gear navegando por el Canal de la Mancha"
+              data-caption="Toybota y autos anfibios: El reto histórico cruzando 34 kilómetros por mar abierto hacia Francia.">
+              <img src="images/amphibious-car-challenge.webp" alt="Autos anfibios cruzando el Canal de la Mancha"
+                loading="lazy" width="600" height="450">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Autos Anfibios • Canal de la Mancha</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- Item 4 -->
+          <figure class="gallery-item" data-category="supercars">
+            <button class="gallery-trigger" aria-haspopup="dialog" data-img-src="images/Bugatti-Caza.jpeg.webp"
+              data-img-alt="Bugatti Veyron compitiendo contra un caza Eurofighter Typhoon"
+              data-caption="Bugatti Veyron vs. Caza Typhoon: Una carrera de aceleración vertical y horizontal legendaria.">
+              <img src="images/Bugatti-Caza.jpeg.webp" alt="Bugatti Veyron vs Caza Typhoon" loading="lazy" width="600"
+                height="450">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Bugatti Veyron vs. Caza Typhoon</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- Item 5 -->
+          <figure class="gallery-item" data-category="specials">
+            <button class="gallery-trigger" aria-haspopup="dialog" data-img-src="images/Especial-Vietnam.jpg"
+              data-img-alt="Especial de Vietnam de Top Gear cruzando en scooters"
+              data-caption="Especial de Vietnam: 1.600 kilómetros recorridos en dos ruedas desde Saigón hasta la Bahía de Ha Long.">
+              <img src="images/Especial-Vietnam.jpg" alt="Especial de Vietnam en dos ruedas" loading="lazy" width="600"
+                height="450">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Especial de Vietnam</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- Item 6 -->
+          <figure class="gallery-item" data-category="custom">
+            <button class="gallery-trigger" aria-haspopup="dialog" data-img-src="images/Casa-Rodante.jpg"
+              data-img-alt="Casa rodante casera de tres pisos construida por Jeremy Clarkson"
+              data-caption="El Rascacielos Rodante: La icónica casa rodante de 3 pisos de Jeremy Clarkson sobre chasis Citroën.">
+              <img src="images/Casa-Rodante.jpg" alt="Casa rodante de tres pisos de Jeremy Clarkson" loading="lazy"
+                width="600" height="450">
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">El Rascacielos Rodante</span>
+              </div>
+            </button>
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =====================================================
+         MODAL / LIGHTBOX ACCESIBLE PARA LA GALERÍA
+         - Soporta cierre por botón, tecla ESC o clic exterior
+         - Accesibilidad con role="dialog" y aria-modal="true"
+         ===================================================== -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true"
+      aria-labelledby="lightbox-caption">
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar vista ampliada (Esc)">✕</button>
+        <div class="lightbox-image-container">
+          <img src="" alt="" id="lightbox-img" class="lightbox-img">
+        </div>
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+      </div>
+    </div>
+
+    <!-- =====================================================
+         SECCIÓN 4: CONTACTO Y COMUNIDAD
+         - Formulario con validación nativa HTML5
+         - Campos obligatorios, types semánticos y feedback
+         ===================================================== -->
+    <section class="section contact-section" id="contacto" aria-labelledby="contact-title">
+      <div class="container">
+
+        <div class="contact-wrapper">
+
+          <div class="contact-info">
+            <span class="section-eyebrow">Únete al Paddock</span>
+            <h2 class="section-title" id="contact-title">Hablemos de Motores y Locuras</h2>
+            <p class="section-desc">
+              ¿Tienes un recuerdo favorito de Top Gear, una sugerencia para el archivo o quieres debatir si el Lexus LFA
+              es el mejor auto jamás fabricado? Envíanos tu mensaje.
+            </p>
+
+            <div class="contact-highlights">
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">📍</span>
+                <div>
+                  <strong>Ubicación Espiritual:</strong>
+                  <p>Dunsfold Aerodrome, Surrey, Reino Unido</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">⏱️</span>
+                <div>
+                  <strong>Tiempo de Respuesta:</strong>
+                  <p>Más rápido que The Stig en una vuelta rápida</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">✉️</span>
+                <div>
+                  <strong>Email Directo:</strong>
+                  <p>contacto@topgear-tributo.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulario de Contacto -->
+          <div class="contact-form-card">
+            <form class="contact-form" id="form-contacto" action="#" method="POST" novalidate>
+
+              <div class="form-group">
+                <label for="nombre" class="form-label">Nombre Completo <span class="required"
+                    aria-hidden="true">*</span></label>
+                <input type="text" id="nombre" name="nombre" class="form-input" placeholder="Ej. Jeremy Clarkson"
+                  required minlength="3" maxlength="60" autocomplete="name" aria-describedby="nombre-error">
+                <span class="form-error" id="nombre-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Correo Electrónico <span class="required"
+                    aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="tu.correo@ejemplo.com"
+                  required autocomplete="email" aria-describedby="email-error">
+                <span class="form-error" id="email-error" aria-live="polite"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="episodio-favorito" class="form-label">Episodio o Especial Favorito</label>
+                <select id="episodio-favorito" name="episodio-favorito" class="form-input form-select">
+                  <option value="" disabled selected>Selecciona tu especial favorito...</option>
+                  <option value="vietnam">Especial de Vietnam (Motos)</option>
+                  <option value="polonorte">Especial del Polo Norte (Hilux)</option>
+                  <option value="botsuana">Especial de Botsuana (Oliver)</option>
+                  <option value="bolivia">Especial de Bolivia (Selva y Altura)</option>
+                  <option value="anfibios">Desafío de Autos Anfibios</option>
+                  <option value="otro">Otro momento legendario</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="mensaje" class="form-label">Mensaje <span class="required"
+                    aria-hidden="true">*</span></label>
+                <textarea id="mensaje" name="mensaje" rows="4" class="form-input form-textarea"
+                  placeholder="Comparte tu anécdota, debate o mensaje con la comunidad..." required minlength="10"
+                  maxlength="1000" aria-describedby="mensaje-error"></textarea>
+                <span class="form-error" id="mensaje-error" aria-live="polite"></span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="btn-submit">
+                <span>Enviar Mensaje</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <line x1="22" y1="2" x2="11" y2="13"></line>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+              </button>
+
+              <!-- Mensaje de estado/confirmación -->
+              <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================
+       PIE DE PÁGINA (<footer>)
+       - Enlaces internos para rastreo de buscadores
+       - Derechos reservados y atribución
+       ======================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+
+      <div class="footer-brand">
+        <a href="#inicio" class="logo" aria-label="Top Gear Clásico - Pie de página">
+          <img src="images/Logo-TopGear.png" alt="Top Gear Logo" class="logo-img" width="140" height="44">
+        </a>
+        <p class="footer-tagline">
+          Sitio tributo no oficial dedicado a la era dorada de Top Gear (BBC, 2002-2015). Creado con pasión por el
+          automovilismo, el humor británico y el buen diseño web.
+        </p>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="presentadores.html">Presentadores</a></li>
+          <li><a href="galeria.html">Galería de Autos</a></li>
+          <li><a href="#especiales-mundo">Especiales por el Mundo</a></li>
+          <li><a href="#pruebas-pista">Pruebas en Pista</a></li>
+          <li><a href="#desafios-baratos">Desafíos de Autos Baratos</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4 class="footer-heading">Especiales Míticos</h4>
+        <ul class="footer-links">
+          <li><a href="#especiales-mundo">Especial de Vietnam</a></li>
+          <li><a href="#especiales-mundo">Carrera al Polo Norte</a></li>
+          <li><a href="#especiales-mundo">Botsuana con Oliver</a></li>
+          <li><a href="#desafios-baratos">Travesía de Autos Anfibios</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4 class="footer-heading">Recursos &amp; SEO</h4>
+        <ul class="footer-links">
+          <li><a href="sitemap.xml" target="_blank" rel="noopener">Mapa del Sitio XML</a></li>
+          <li><a href="robots.txt" target="_blank" rel="noopener">Archivo Robots.txt</a></li>
+          <li><a href="#header-principal">Volver Arriba ↑</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p class="footer-copy">
+          &copy; 2026 Top Gear Clásico Fan Project. "And on that bombshell, it's time to end."
+        </p>
+        <p class="footer-author">
+          Desarrollado con HTML5 semántico, CSS3 moderno y optimización técnica SEO.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal con defer para no bloquear el renderizado inicial -->
+  <script src="js/main.js" defer></script>
+</body>
+
+</html>

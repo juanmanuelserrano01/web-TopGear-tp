@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+  <!-- =======================================================
+       METADATOS BÁSICOS Y CONFIGURACIÓN
+       ======================================================= -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <!-- =======================================================
+       SEO ON-PAGE: GALERÍA DE AUTOS TOP GEAR
+       ======================================================= -->
+  <title>Galería de Autos de Top Gear | Superdeportivos, Cheap Cars y Creaciones</title>
+  <meta name="description" content="Explora la galería definitiva de autos de Top Gear: superdeportivos de Dunsfold, desafíos de autos baratos de £1500, vehículos anfibios y creaciones caseras.">
+  <meta name="keywords" content="galeria Top Gear, superautos Top Gear, Lexus LFA, Bugatti Veyron, Oliver Opel Kadett, Toyota Hilux indestructible, autos anfibios, Reliant Robin, The Stig">
+  <meta name="author" content="Top Gear Fan Community">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  
+  <!-- URL Canónica -->
+  <link rel="canonical" href="https://ejemplo-topgear-clasico.github.io/galeria.html">
+
+  <!-- =======================================================
+       OPEN GRAPH Y TWITTER CARDS
+       ======================================================= -->
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Galería de Autos y Momentos Icónicos de Top Gear">
+  <meta property="og:description" content="Visualiza en alta definición los autos más rápidos, las peores chatarras y las creaciones más absurdas construidas por Clarkson, Hammond y May.">
+  <meta property="og:url" content="https://ejemplo-topgear-clasico.github.io/galeria.html">
+  <meta property="og:site_name" content="Top Gear Clásico">
+  <meta property="og:image" content="images/Logo-TopGear.png">
+  <meta property="og:image:alt" content="Galería de superdeportivos y autos clásicos de Top Gear">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Galería de Autos de Top Gear | Clarkson, Hammond y May">
+  <meta name="twitter:description" content="Colección fotográfica interactiva con visor Lightbox de las máquinas que hicieron historia en Top Gear.">
+  <meta name="twitter:image" content="images/Logo-TopGear.png">
+
+  <!-- =======================================================
+       OPTIMIZACIÓN DE RENDIMIENTO (Core Web Vitals)
+       ======================================================= -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Oswald:wght@500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- =======================================================
+       DATOS ESTRUCTURADOS (SCHEMA.ORG JSON-LD)
+       ======================================================= -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Inicio",
+            "item": "https://ejemplo-topgear-clasico.github.io/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Galería de Autos",
+            "item": "https://ejemplo-topgear-clasico.github.io/galeria.html"
+          }
+        ]
+      },
+      {
+        "@type": "ImageGallery",
+        "@id": "https://ejemplo-topgear-clasico.github.io/galeria.html#gallery",
+        "url": "https://ejemplo-topgear-clasico.github.io/galeria.html",
+        "name": "Galería de Autos Icónicos de Top Gear",
+        "description": "Catálogo visual interactivo de superdeportivos, vehículos de desafíos y creaciones automotrices de la era dorada de Top Gear.",
+        "inLanguage": "es"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Salto accesible -->
+  <a href="#contenido-principal" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- =======================================================
+       ENCABEZADO Y NAVEGACIÓN
+       ======================================================= -->
+  <header class="site-header" id="header-principal">
+    <div class="header-container">
+      
+      <!-- Logotipo -->
+      <a href="index.html" class="logo" aria-label="Top Gear Clásico - Inicio">
+        <img src="images/Logo-TopGear.png" alt="Top Gear Logo" class="logo-img" width="140" height="44">
+        <span class="logo-tag">ERA CLÁSICA</span>
+      </a>
+
+      <!-- Botón móvil -->
+      <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="menu-principal" aria-label="Abrir menú de navegación">
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+        <span class="nav-toggle-bar"></span>
+      </button>
+
+      <!-- Menú principal -->
+      <nav class="main-nav" id="menu-principal" aria-label="Navegación principal">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Inicio</a>
+          </li>
+
+          <!-- LINK 1: Dropdown Episodios y Especiales -->
+          <li class="nav-item has-dropdown">
+            <button class="nav-link dropdown-toggle" id="dropdown-episodios" aria-expanded="false" aria-haspopup="true">
+              Episodios y Especiales
+              <svg class="dropdown-icon" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdown-episodios">
+              <li class="dropdown-item">
+                <a href="index.html#especiales-mundo" class="dropdown-link">
+                  <span class="dropdown-title">Especiales por el Mundo</span>
+                  <span class="dropdown-desc">Vietnam, Polo Norte, Botsuana, Bolivia</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="index.html#pruebas-pista" class="dropdown-link">
+                  <span class="dropdown-title">Pruebas de Pista &amp; The Stig</span>
+                  <span class="dropdown-desc">Power Laps, Superautos en Dunsfold</span>
+                </a>
+              </li>
+              <li class="dropdown-item">
+                <a href="index.html#desafios-baratos" class="dropdown-link">
+                  <span class="dropdown-title">Desafíos de Autos Baratos</span>
+                  <span class="dropdown-desc">Retos por £1500, caravanas y anfibios</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- LINK 2: Presentadores -->
+          <li class="nav-item">
+            <a href="presentadores.html" class="nav-link">Presentadores</a>
+          </li>
+
+          <!-- LINK 3: Galería (Activo) -->
+          <li class="nav-item">
+            <a href="galeria.html" class="nav-link active" aria-current="page">Galería</a>
+          </li>
+
+          <!-- LINK 4: Contacto -->
+          <li class="nav-item">
+            <a href="index.html#contacto" class="nav-link nav-btn-highlight">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- =======================================================
+       CONTENIDO PRINCIPAL
+       ======================================================= -->
+  <main id="contenido-principal">
+
+    <!-- HERO BANNER DE LA PÁGINA -->
+    <section class="page-hero" aria-labelledby="page-hero-title">
+      <div class="container">
+        
+        <!-- Migas de Pan (Breadcrumbs) -->
+        <nav class="breadcrumb-nav" aria-label="Migas de pan">
+          <ol class="breadcrumb-list">
+            <li class="breadcrumb-item"><a href="index.html">Inicio</a></li>
+            <li class="breadcrumb-separator" aria-hidden="true">/</li>
+            <li class="breadcrumb-item breadcrumb-current" aria-current="page">Galería de Autos</li>
+          </ol>
+        </nav>
+
+        <span class="section-eyebrow">El Garaje Definitivo</span>
+        <h1 class="page-hero-title" id="page-hero-title">Galería de <span class="text-gradient">Autos y Leyendas</span></h1>
+        <p class="page-hero-desc">
+          Desde superdeportivos de millones de libras y récords mundiales de velocidad hasta cacharros oxidados comprados por £1500 y autos anfibios caseros. Haz clic en cualquier imagen para abrir el visor en detalle.
+        </p>
+      </div>
+    </section>
+
+    <!-- SECCIÓN: GRILLA DE GALERÍA Y FILTROS -->
+    <section class="section" aria-labelledby="gallery-main-title">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">Colección Fotográfica</span>
+          <h2 class="section-title" id="gallery-main-title">Explora por Categoría</h2>
+          <p class="section-desc">
+            Utiliza los filtros inferiores para descubrir los vehículos según su tipo y momento en el programa.
+          </p>
+        </header>
+
+        <!-- Filtros interactivos con accesibilidad ARIA -->
+        <div class="gallery-filters" role="tablist" aria-label="Categorías de autos">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">Todos los Autos</button>
+          <button class="filter-btn" data-filter="supercars" role="tab" aria-selected="false">Superdeportivos</button>
+          <button class="filter-btn" data-filter="cheap-cars" role="tab" aria-selected="false">Cheap Cars &amp; Aventura</button>
+          <button class="filter-btn" data-filter="custom" role="tab" aria-selected="false">Creaciones &amp; Destrucción</button>
+          <button class="filter-btn" data-filter="track" role="tab" aria-selected="false">Pista &amp; The Stig</button>
+        </div>
+
+        <!-- Grid de Imágenes Adaptable (CSS Grid) -->
+        <div class="gallery-grid" id="gallery-grid">
+
+          <!-- 1. Superdeportivo: Lexus LFA -->
+          <figure class="gallery-item" data-category="supercars">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Lexus-LFA.jpg"
+                    data-img-alt="Lexus LFA blanco con motor V10 acelerando en la pista de pruebas"
+                    data-caption="Lexus LFA: El auto favorito de Jeremy Clarkson. Un motor V10 de 4.8L que sube de revoluciones tan rápido que necesitó un tacómetro digital.">
+              <img src="images/Lexus-LFA.jpg" 
+                   alt="Lexus LFA en pista de pruebas de Top Gear" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Superauto</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Lexus LFA • El Favorito de Jezza</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 2. Cheap Car: Toyota Hilux Indestructible (Especial Polo Norte) -->
+          <figure class="gallery-item" data-category="cheap-cars">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Especial-Polo.jpeg.webp"
+                    data-img-alt="Toyota Hilux modificada en la expedición al Polo Norte"
+                    data-caption="Toyota Hilux 'La Indestructible': Modificada para soportar -40°C en la carrera épica al Polo Norte Magnético frente al trineo de perros.">
+              <img src="images/Especial-Polo.jpeg.webp" 
+                   alt="Toyota Hilux en el Polo Norte" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Polo Norte</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Toyota Hilux • Polo Norte</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 3. Superdeportivo: Bugatti Veyron Super Sport -->
+          <figure class="gallery-item" data-category="supercars">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Bugatti-Caza.jpeg.webp"
+                    data-img-alt="Bugatti Veyron negro compitiendo contra un caza Eurofighter Typhoon"
+                    data-caption="Bugatti Veyron Super Sport: Una de las pruebas de aceleración más legendarias, superando los 400 km/h en línea recta.">
+              <img src="images/Bugatti-Caza.jpeg.webp" 
+                   alt="Bugatti Veyron vs Caza Typhoon" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Récord Mundial</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Bugatti Veyron vs. Caza</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 4. Cheap Car: Opel Kadett 'Oliver' (Botsuana) -->
+          <figure class="gallery-item" data-category="cheap-cars">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Especial-Botswana.jpg"
+                    data-img-alt="Opel Kadett clásico de 1963 cruzando el desierto de Botsuana"
+                    data-caption="Opel Kadett de 1963 'Oliver': El compañero fiel de Richard Hammond que conquistó el salar de Makgadikgadi en Botsuana y luego fue repatriado al Reino Unido.">
+              <img src="images/Especial-Botswana.jpg" 
+                   alt="Opel Kadett Oliver en el desierto de Botsuana" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Botsuana</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Opel Kadett "Oliver" • Botsuana</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 5. Creación Casera: Toybota & Autos Anfibios -->
+          <figure class="gallery-item" data-category="custom">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/amphibious-car-challenge.webp"
+                    data-img-alt="Vehículo casero anfibio navegando en aguas abiertas con motor fuera de borda"
+                    data-caption="Toybota Anfibia: La camioneta con mástil y motor fuera de borda con la que Clarkson, Hammond y May lograron la histórica hazaña de cruzar el Canal de la Mancha.">
+              <img src="images/amphibious-car-challenge.webp" 
+                   alt="Toybota cruzando el Canal de la Mancha" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Anfibio</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Toybota • Cruce del Canal</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 6. Pista: Pagani Huayra & The Stig -->
+          <figure class="gallery-item" data-category="track">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/pagani-zonda-huayra.jpg.webp"
+                    data-img-alt="Pagani Huayra de fibra de carbono rodando a toda velocidad en Dunsfold"
+                    data-caption="Pagani Huayra: Marcó un estratosférico tiempo de 1:13.8 en el tablero de Power Laps en manos de The Stig con sus alerones aerodinámicos activos.">
+              <img src="images/pagani-zonda-huayra.jpg.webp" 
+                   alt="Pagani Huayra en pista de Dunsfold con The Stig" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Power Lap</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Pagani Huayra • 1:13.8</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 7. Creación Casera: El Rascacielos Rodante -->
+          <figure class="gallery-item" data-category="custom">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Casa-Rodante.jpg"
+                    data-img-alt="Casa rodante de construcción personalizada de tres pisos tambaleándose en carretera"
+                    data-caption="El Rascacielos de Jeremy Clarkson: Una casa rodante de madera de tres pisos montada sobre un chasis Citroën CX que desafiaba cualquier ley de física y sentido común.">
+              <img src="images/Casa-Rodante.jpg" 
+                   alt="Casa rodante de tres pisos de Jeremy Clarkson" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Construcción Casera</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">El Rascacielos Rodante</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 8. Superdeportivo: Ferrari 458 Italia -->
+          <figure class="gallery-item" data-category="supercars">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Ferrari-458-italia.jpg.webp"
+                    data-img-alt="Ferrari 458 Italia rojo en ruta de montaña alpina"
+                    data-caption="Ferrari 458 Italia: Alabado por los tres presentadores como uno de los deportivos con motor V8 atmosférico más perfectos jamás concebidos.">
+              <img src="images/Ferrari-458-italia.jpg.webp" 
+                   alt="Ferrari 458 Italia en ruta de montaña" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Superauto</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Ferrari 458 Italia • Maranello</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 9. Cheap Cars: Superautos Italianos de £10.000 -->
+          <figure class="gallery-item" data-category="cheap-cars">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Superauto.10000.jpg"
+                    data-img-alt="Superautos italianos clásicos comprados por diez mil libras averiados en ruta"
+                    data-caption="Superautos Italianos por £10.000: Ferrari 308 GT4, Maserati Merak y Lamborghini Urraco en el cómico desafío de superdeportivos baratos.">
+              <img src="images/Superauto.10000.jpg" 
+                   alt="Superautos italianos por 10000 libras" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Desafío</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Superautos de £10.000</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 10. Pista: McLaren MP4-12C -->
+          <figure class="gallery-item" data-category="track">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Mclaren-MP4-12C.jpg.webp"
+                    data-img-alt="McLaren naranja cruzando la curva Follow-Through a fondo"
+                    data-caption="McLaren MP4-12C: La respuesta británica a Ferrari. Probado al límite por The Stig en las curvas de Hammerhead y Gambon.">
+              <img src="images/Mclaren-MP4-12C.jpg.webp" 
+                   alt="McLaren MP4-12C en Dunsfold" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Pista</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">McLaren MP4-12C • Dunsfold</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 11. Cheap Cars & Aventura: Especial de Vietnam -->
+          <figure class="gallery-item" data-category="cheap-cars">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Especial-Vietnam.jpg"
+                    data-img-alt="Especial de Vietnam de Top Gear en scooters cruzando el país"
+                    data-caption="Especial de Vietnam: 1.600 kilómetros de sur a norte a través de montañas y lluvias tropicales en scooters de bajo costo.">
+              <img src="images/Especial-Vietnam.jpg" 
+                   alt="Especial de Vietnam de Top Gear" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Vietnam</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Especial de Vietnam • Scooters</span>
+              </div>
+            </button>
+          </figure>
+
+          <!-- 12. Pista: Estrella en Auto a Precio Razonable -->
+          <figure class="gallery-item" data-category="track">
+            <button class="gallery-trigger" aria-haspopup="dialog"
+                    data-img-src="images/Estrellas-Auto-Precio-Razonable.jpg"
+                    data-img-alt="Estrella en auto a precio razonable rodando en la curva Gambon"
+                    data-caption="Estrella en Auto a Precio Razonable: Los humildes hatchbacks donde pilotos de F1 y estrellas de cine compitieron contra el reloj.">
+              <img src="images/Estrellas-Auto-Precio-Razonable.jpg" 
+                   alt="Auto a precio razonable en Dunsfold" loading="lazy" width="600" height="450">
+              <span class="gallery-badge">Celebridades</span>
+              <div class="gallery-overlay">
+                <span class="gallery-zoom-icon" aria-hidden="true">🔍</span>
+                <span class="gallery-label">Auto a Precio Razonable</span>
+              </div>
+            </button>
+          </figure>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- MODAL LIGHTBOX ACCESIBLE (Soporta Teclado, ESC y Clic Fuera) -->
+    <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="lightbox-caption">
+      <div class="lightbox-backdrop" id="lightbox-backdrop"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Cerrar vista ampliada (Esc)">✕</button>
+        <div class="lightbox-image-container">
+          <img src="" alt="" id="lightbox-img" class="lightbox-img">
+        </div>
+        <p class="lightbox-caption" id="lightbox-caption"></p>
+      </div>
+    </div>
+
+    <!-- BANNER CTA -->
+    <section class="section" aria-label="Enlaces a otras secciones">
+      <div class="container">
+        <div class="stig-banner" style="justify-content: space-between; flex-wrap: wrap;">
+          <div>
+            <h3 class="stig-title">¿Quieres conocer a los pilotos detrás de estas máquinas?</h3>
+            <p class="stig-desc">Descubre las biografías y anécdotas de Clarkson, Hammond, May y The Stig.</p>
+          </div>
+          <div style="display: flex; gap: 1rem; margin-top: 1rem;">
+            <a href="presentadores.html" class="btn btn-primary" style="width: auto;">Ver Presentadores</a>
+            <a href="index.html#contacto" class="btn btn-secondary" style="width: auto;">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =======================================================
+       PIE DE PÁGINA
+       ======================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-grid">
+      
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="Top Gear Clásico - Inicio">
+          <img src="images/Logo-TopGear.png" alt="Top Gear Logo" class="logo-img" width="140" height="44">
+        </a>
+        <p class="footer-tagline">
+          Sitio tributo no oficial dedicado a la era dorada de Top Gear (BBC, 2002-2015).
+        </p>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4 class="footer-heading">Navegación</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="presentadores.html">Presentadores</a></li>
+          <li><a href="galeria.html">Galería de Autos</a></li>
+          <li><a href="index.html#especiales-mundo">Especiales por el Mundo</a></li>
+          <li><a href="index.html#pruebas-pista">Pruebas en Pista</a></li>
+          <li><a href="index.html#desafios-baratos">Desafíos de Autos Baratos</a></li>
+          <li><a href="index.html#contacto">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4 class="footer-heading">Especiales Míticos</h4>
+        <ul class="footer-links">
+          <li><a href="index.html#especiales-mundo">Especial de Vietnam</a></li>
+          <li><a href="index.html#especiales-mundo">Carrera al Polo Norte</a></li>
+          <li><a href="index.html#especiales-mundo">Botsuana con Oliver</a></li>
+          <li><a href="index.html#desafios-baratos">Autos Anfibios en el Canal</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-nav-col">
+        <h4 class="footer-heading">Recursos &amp; SEO</h4>
+        <ul class="footer-links">
+          <li><a href="sitemap.xml" target="_blank" rel="noopener">Mapa del Sitio XML</a></li>
+          <li><a href="robots.txt" target="_blank" rel="noopener">Archivo Robots.txt</a></li>
+          <li><a href="#header-principal">Volver Arriba ↑</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-flex">
+        <p class="footer-copy">
+          &copy; 2026 Top Gear Clásico Fan Project. "And on that bombshell, it's time to end."
+        </p>
+        <p class="footer-author">
+          Desarrollado con HTML5 semántico, CSS3 moderno y optimización técnica SEO.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script principal con defer -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
